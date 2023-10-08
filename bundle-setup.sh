@@ -29,7 +29,7 @@
 # List of software
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
-# btop cmatrix fzf ripgrep thefuck mpv vlc
+# btop cmatrix fzf ripgrep thefuck mpv vlc tree
 # celluloid scrcpy gimp krita blender darktable
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
@@ -74,8 +74,8 @@ echo "| installing curl gcc g++"
 apt install curl gcc g++ -y
 echo " "
 
-echo "| installing make"
-apt install make -y
+echo "| installing make tree"
+apt install make tree -y
 echo " "
 
 echo "| installing git tldr"
