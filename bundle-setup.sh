@@ -146,15 +146,15 @@ apt install kdenlive -y
 echo " "
 
 echo "| installing obs-studio"
-apt install darktable -y
+apt install obs-studio -y
 echo " "
 
 echo "| installing audacity"
-apt install darktable -y
+apt install audacity -y
 echo " "
 
 echo "| installing blender"
-apt install darktable -y
+apt install blender -y
 echo " "
 
 echo "| installing stacer"
