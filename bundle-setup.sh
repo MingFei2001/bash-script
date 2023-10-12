@@ -26,6 +26,9 @@
 # ------------------------------------------
 
 # ------------------------------------------
+# Using apt to install most software
+# Then filled out the rest with snap
+# ------------------------------------------
 # List of software
 #
 # APT :
@@ -34,10 +37,10 @@
 # celluloid scrcpy gimp krita blender darktable
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
-# nodejs golang
+# nodejs golang github-desktop
 #
 # Snap :
-# neovim chromium code lazygit
+# firefox neovim chromium code lazygit
 
 # ------------------------------------------
 # Welcoming text
@@ -52,13 +55,11 @@ echo "| Remember to respond when prompted."
 echo "| Mostly just y or enter."
 echo "| Run this script with sudo priviledges."
 echo "| like such: sudo bundle-setup.sh"
-echo "| Make sure you know the sudo password."
+echo "| So make sure you know the sudo password."
 echo " "
 # ------------------------------------------
 
 # ------------------------------------------
-# Using apt to install most software
-# Then filled out the rest with snap
 # Update the system to the latest
 echo "| Updating System..."
 echo "| TODO: Press y and ENTER key when prompted"
@@ -76,24 +77,16 @@ echo "| installing curl gcc g++"
 apt install curl gcc g++ -y
 echo " "
 
-echo "| installing make tree"
-apt install make tree -y
+echo "| installing make tree git tldr"
+apt install make tree git tldr -y
 echo " "
 
-echo "| installing git tldr"
-apt install git tldr -y
+echo "| installing vim neofetch duf"
+apt install vim neofetch duf -y
 echo " "
 
-echo "| installing vim"
-apt install vim -y
-echo " "
-
-echo "| installing neofetch duf"
-apt install neofetch duf -y
-echo " "
-
-echo "| installing btop cmatrix"
-apt install btop cmatrix -y
+echo "| installing btop cmatrix scrcpy"
+apt install btop cmatrix scrcpy -y
 echo " "
 
 echo "| installing fzf ripgrep thefuck"
@@ -102,10 +95,6 @@ echo " "
 
 echo "| installing mpv vlc celluloid"
 apt install mpv vlc celluloid -y
-echo " "
-
-echo "| installing scrcpy"
-apt install scrcpy -y
 echo " "
 
 # Secondly some programming languages
@@ -163,6 +152,21 @@ echo "| installing stacer"
 apt install stacer -y
 echo " "
 
+# ------------------------------------------
+# uncomment to install github & github-desktop
+#
+# type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
+# curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg &&
+# 	sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg &&
+# 	echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list >/dev/null &&
+# 	sudo apt update &&
+# 	sudo apt install gh -y
+#
+# wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg >/dev/null
+# sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
+# sudo apt update && sudo apt install github-desktop
+# ------------------------------------------
+
 # Now install something else with snap
 # But first refresh snap
 echo "| checking if snap existed..."
@@ -174,6 +178,10 @@ snap refresh
 echo " "
 
 # Installation start
+echo "| installing firefox"
+snap install firefox
+echo " "
+
 echo "| installing neovim"
 snap install nvim --classic
 echo " "
