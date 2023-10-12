@@ -27,6 +27,7 @@
 
 # ------------------------------------------
 # List of software
+#
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck mpv vlc tree
@@ -34,6 +35,7 @@
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang
+#
 # Snap :
 # neovim chromium code lazygit
 
