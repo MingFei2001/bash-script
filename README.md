@@ -4,7 +4,7 @@ This is a collection of my bash script
 ---
 so far we have:
 1. BUNDLE setup script
-   - the basic ubuntu and debian linux easy setup script
+   - Basic ubuntu and debian linux easy setup script
 2. BUNDLE small setup script
-   - the even basic ubuntu and debian linux easy setup script
-3. Still waiting ...
+   - Even basic ubuntu and debian linux easy setup script
+3. Still Pending ...
