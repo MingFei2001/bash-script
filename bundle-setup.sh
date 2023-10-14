@@ -40,7 +40,7 @@
 # nodejs golang github-desktop
 #
 # Snap :
-# firefox neovim chromium code lazygit musikcube
+# firefox neovim chromium code lazygit
 
 # ------------------------------------------
 # Welcoming text
@@ -197,10 +197,7 @@ echo " "
 echo "| installing lazygit"
 snap install lazygit
 echo " "
-
-echo "| installing musikcube"
-snap install musikcube
-echo " "
+# ------------------------------------------
 
 # ------------------------------------------
 # End of script
