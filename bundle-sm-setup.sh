@@ -32,7 +32,7 @@
 #
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
-# btop cmatrix fzf ripgrep thefuck tree scrcpy
+# btop cmatrix fzf ripgrep thefuck tree fdclone
 #
 # Snap :
 # neovim lazygit
@@ -85,8 +85,8 @@ echo "| installing fzf ripgrep thefuck"
 apt install fzf ripgrep thefuck -y
 echo " "
 
-echo "| installing scrcpy"
-apt install scrcpy -y
+echo "| installing fdclone"
+apt install fdclone -y
 echo " "
 
 # Now install something else with snap

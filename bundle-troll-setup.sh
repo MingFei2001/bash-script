@@ -50,7 +50,7 @@ echo "| This is not a fully automated script."
 echo "| Remember to respond when prompted."
 echo "| Mostly just y or enter."
 echo "| Run this script with sudo priviledges."
-echo "| like such: sudo bundle-sm-setup.sh"
+echo "| like such: sudo bundle-troll-setup.sh"
 echo "| SO make sure you know the sudo password."
 echo " "
 # ------------------------------------------
