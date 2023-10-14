@@ -7,4 +7,5 @@ so far we have:
    - Basic ubuntu and debian linux easy setup script
 2. BUNDLE small setup script
    - Even basic ubuntu and debian linux easy setup script
-3. Still Pending ...
+3. BUNDLE troll setup script
+   - A troll version of the bundle troll script
