@@ -37,7 +37,7 @@
 # celluloid scrcpy gimp krita blender darktable
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
-# nodejs golang github-desktop
+# nodejs golang github-desktop cmake fdclone
 #
 # Snap :
 # firefox neovim chromium code lazygit
@@ -95,6 +95,10 @@ echo " "
 
 echo "| installing mpv vlc celluloid"
 apt install mpv vlc celluloid -y
+echo " "
+
+echo "| installing cmake fdclone"
+apt install cmake -y
 echo " "
 
 # Secondly some programming languages
