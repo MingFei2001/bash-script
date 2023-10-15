@@ -40,7 +40,7 @@
 # nodejs golang github-desktop cmake fdclone
 #
 # Snap :
-# firefox neovim chromium code lazygit
+# firefox neovim chromium code lazygit guiscrcpy
 
 # ------------------------------------------
 # Welcoming text
@@ -200,6 +200,10 @@ echo " "
 
 echo "| installing lazygit"
 snap install lazygit
+echo " "
+
+echo "| installing guiscrcpy"
+snap install guiscrcpy
 echo " "
 # ------------------------------------------
 
