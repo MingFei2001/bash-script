@@ -38,6 +38,7 @@
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
+# libreoffice qutebrowser
 #
 # Snap :
 # firefox neovim chromium code lazygit
@@ -154,6 +155,14 @@ echo " "
 
 echo "| installing stacer"
 apt install stacer -y
+echo " "
+
+echo "| installing libreoffice"
+apt install libreoffice -y
+echo " "
+
+echo "| installing qutebrowser"
+apt install qutebrowser -y
 echo " "
 
 # ------------------------------------------
