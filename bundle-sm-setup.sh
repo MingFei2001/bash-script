@@ -33,7 +33,7 @@
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake
+# cmake vifm
 #
 # Snap :
 # neovim lazygit
@@ -88,6 +88,10 @@ echo " "
 
 echo "| installing fdclone cmake"
 apt install fdclone cmake -y
+echo " "
+
+echo "| installing vifm"
+apt install vifm -y
 echo " "
 
 # Now install something else with snap
