@@ -33,10 +33,10 @@
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake vifm
+# cmake
 #
 # Snap :
-# neovim lazygit
+# neovim
 # ------------------------------------------
 
 # ------------------------------------------
@@ -90,10 +90,6 @@ echo "| installing fdclone cmake"
 apt install fdclone cmake -y
 echo " "
 
-echo "| installing vifm"
-apt install vifm -y
-echo " "
-
 # Now install something else with snap
 # But first refresh snap
 echo "| checking if snap existed..."
@@ -109,9 +105,6 @@ echo "| installing neovim"
 snap install nvim --classic
 echo " "
 
-echo "| installing lazygit"
-snap install lazygit
-echo " "
 # ------------------------------------------
 
 # ------------------------------------------
