@@ -38,7 +38,7 @@
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
-# libreoffice qutebrowser ranger
+# libreoffice qutebrowser ranger lookatme
 #
 # Snap :
 # firefox neovim chromium code
@@ -100,6 +100,10 @@ echo " "
 
 echo "| installing cmake fdclone ranger"
 apt install cmake fdclone ranger -y
+echo " "
+
+echo "| installing lookatme"
+apt install lookatme -y
 echo " "
 
 # Secondly some programming languages
