@@ -38,7 +38,7 @@
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
-# libreoffice qutebrowser
+# libreoffice qutebrowser ranger
 #
 # Snap :
 # firefox neovim chromium code
@@ -98,8 +98,8 @@ echo "| installing mpv vlc celluloid"
 apt install mpv vlc celluloid -y
 echo " "
 
-echo "| installing cmake fdclone"
-apt install cmake fdclone -y
+echo "| installing cmake fdclone ranger"
+apt install cmake fdclone ranger -y
 echo " "
 
 # Secondly some programming languages
