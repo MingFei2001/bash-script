@@ -39,7 +39,6 @@
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme
-# bleachbit
 #
 # Snap :
 # firefox neovim chromium code
@@ -168,10 +167,6 @@ echo " "
 
 echo "| installing qutebrowser"
 apt install qutebrowser -y
-echo " "
-
-echo "| installing bleachbit"
-apt install bleachbit -y
 echo " "
 
 # ------------------------------------------
