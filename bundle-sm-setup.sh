@@ -33,7 +33,7 @@
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake
+# cmake nmap
 #
 # Snap :
 # neovim
@@ -86,8 +86,8 @@ echo "| installing fzf ripgrep thefuck"
 apt install fzf ripgrep thefuck -y
 echo " "
 
-echo "| installing fdclone cmake"
-apt install fdclone cmake -y
+echo "| installing fdclone cmake nmap"
+apt install fdclone cmake nmap -y
 echo " "
 
 # Now install something else with snap

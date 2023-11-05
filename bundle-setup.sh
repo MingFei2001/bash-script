@@ -39,6 +39,7 @@
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme
+# nmap
 #
 # Snap :
 # firefox neovim chromium code
@@ -102,7 +103,7 @@ echo "| installing cmake fdclone ranger"
 apt install cmake fdclone ranger -y
 echo " "
 
-echo "| installing lookatme"
+echo "| installing lookatme nmap"
 apt install lookatme -y
 echo " "
 
