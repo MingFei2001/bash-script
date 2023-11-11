@@ -103,8 +103,8 @@ echo "| installing cmake fdclone ranger"
 apt install cmake fdclone ranger -y
 echo " "
 
-echo "| installing lookatme nmap"
-apt install lookatme -y
+echo "| installing lookatme nmap gufw"
+apt install lookatme nmap gufw -y
 echo " "
 
 # Secondly some programming languages
