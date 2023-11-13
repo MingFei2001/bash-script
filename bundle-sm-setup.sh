@@ -18,25 +18,18 @@
 # This Script is created so i can just
 # simply git clone this and run it in bash
 # to install simple tui and gui apps for
-# fast installation and testing
+# quick installation and testing
 # ------------------------------------------
 # P/S: Use it at your own risk
-# P/S: Just making it clear
 # ------------------------------------------
 
 # ------------------------------------------
-# Using apt to install most software
-# Then filled out the rest with snap
-# ------------------------------------------
 # List of software
 #
-# APT :
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
 # cmake nmap gufw
 #
-# Snap :
-# neovim
 # ------------------------------------------
 
 # ------------------------------------------
@@ -92,21 +85,6 @@ echo " "
 
 echo "| installing gufw"
 apt install gufw -y
-echo " "
-
-# Now install something else with snap
-# But first refresh snap
-echo "| checking if snap existed..."
-apt install snapd
-echo " "
-
-echo "| Updating snap"
-snap refresh
-echo " "
-
-# Installation start
-echo "| installing neovim"
-snap install nvim --classic
 echo " "
 
 # ------------------------------------------

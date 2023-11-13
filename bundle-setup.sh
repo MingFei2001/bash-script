@@ -19,10 +19,8 @@
 # simply git clone this and run it in bash
 # to easily get most of the app i need in
 # most Ubuntu or debian based linux distro
-# mainly cli application though
 # ------------------------------------------
 # P/S: Use it at your own risk
-# P/S: Just making it clear
 # ------------------------------------------
 
 # ------------------------------------------
@@ -211,6 +209,13 @@ echo " "
 echo "| installing code"
 snap install code --classic
 echo " "
+
+# ------------------------------------------
+# Now just have to link the snap binary to the user applications library
+# creating a symbolic link with the snap binary folder
+# in /usr/share/applications/snapd
+
+# sudo ln -s /var/lib/snapd/desktop/applications /usr/share/applications/snapd
 
 # ------------------------------------------
 
