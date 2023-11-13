@@ -28,7 +28,7 @@
 #
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake nmap gufw
+# cmake nmap pass
 #
 # ------------------------------------------
 
@@ -83,8 +83,8 @@ echo "| installing fdclone cmake nmap"
 apt install fdclone cmake nmap -y
 echo " "
 
-echo "| installing gufw"
-apt install gufw -y
+echo "| installing pass"
+apt install pass -y
 echo " "
 
 # ------------------------------------------

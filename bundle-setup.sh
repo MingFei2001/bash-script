@@ -37,7 +37,7 @@
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme
-# nmap
+# nmap pass gufw
 #
 # Snap :
 # firefox neovim chromium code
@@ -103,6 +103,10 @@ echo " "
 
 echo "| installing lookatme nmap gufw"
 apt install lookatme nmap gufw -y
+echo " "
+
+echo "| installing pass"
+apt install pass -y
 echo " "
 
 # Secondly some programming languages
