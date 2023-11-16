@@ -40,7 +40,7 @@
 # nmap pass gufw
 #
 # Snap :
-# firefox neovim chromium code
+# firefox neovim chromium code monophony
 
 # ------------------------------------------
 # Welcoming text
@@ -222,6 +222,10 @@ echo " "
 
 echo "| installing code"
 snap install code --classic
+echo " "
+
+echo "| installing monophony"
+snap install monophony
 echo " "
 
 # ------------------------------------------
