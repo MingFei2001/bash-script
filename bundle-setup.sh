@@ -187,6 +187,16 @@ echo " "
 # sudo apt update && sudo apt install github-desktop
 # ------------------------------------------
 
+# ------------------------------------------
+# If you are using intel gpu
+#
+# echo "| installing intel-gpu-tools"
+# sudo apt install intel-gpu-tools
+# echo " "
+#
+# p/s: you can use lsgpu as a part of the tools
+# ------------------------------------------
+
 # Now install something else with snap
 # But first refresh snap
 echo "| checking if snap existed..."
