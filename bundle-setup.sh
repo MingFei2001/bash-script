@@ -37,7 +37,7 @@
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme
-# nmap pass gufw docker.io
+# nmap pass gufw docker.io clamtk
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -105,8 +105,8 @@ echo "| installing lookatme nmap gufw"
 apt install lookatme nmap gufw -y
 echo " "
 
-echo "| installing pass docker"
-apt install pass docker.io -y
+echo "| installing pass docker clamav"
+apt install pass docker.io clamtk -y
 echo " "
 
 # Secondly some programming languages
