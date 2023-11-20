@@ -36,8 +36,8 @@
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
-# libreoffice qutebrowser ranger lookatme
-# nmap pass gufw docker.io clamtk
+# libreoffice qutebrowser ranger lookatme nmap
+# pass gufw docker.io clamtk speedtest-cli
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -107,6 +107,10 @@ echo " "
 
 echo "| installing pass docker clamav"
 apt install pass docker.io clamtk -y
+echo " "
+
+echo "| installing speedtest-cli"
+apt install speedtest-cli -y
 echo " "
 
 # Secondly some programming languages

@@ -28,7 +28,7 @@
 #
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake nmap pass
+# cmake nmap pass speedtest-cli
 #
 # ------------------------------------------
 
@@ -83,8 +83,8 @@ echo "| installing fdclone cmake nmap"
 apt install fdclone cmake nmap -y
 echo " "
 
-echo "| installing pass"
-apt install pass -y
+echo "| installing pass speedtest-cli"
+apt install pass speedtest-cli -y
 echo " "
 
 # ------------------------------------------
