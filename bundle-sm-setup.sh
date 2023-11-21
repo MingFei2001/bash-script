@@ -87,6 +87,10 @@ echo "| installing pass speedtest-cli"
 apt install pass speedtest-cli -y
 echo " "
 
+echo "| installing tty-clock"
+apt install tty-clock -y
+echo " "
+
 # ------------------------------------------
 
 # ------------------------------------------
