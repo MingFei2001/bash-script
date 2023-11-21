@@ -38,7 +38,7 @@
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme nmap
 # pass gufw docker.io clamtk speedtest-cli
-# tty-clock
+# tty-clock netcat
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -112,6 +112,10 @@ echo " "
 
 echo "| installing speedtest-cli tty-clock"
 apt install speedtest-cli tty-clock -y
+echo " "
+
+echo "| installing netcat"
+apt install netcat -y
 echo " "
 
 # Secondly some programming languages

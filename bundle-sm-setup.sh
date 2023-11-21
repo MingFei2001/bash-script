@@ -28,7 +28,7 @@
 #
 # curl gcc g++ make git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake nmap pass speedtest-cli
+# cmake nmap pass speedtest-cli netcat
 #
 # ------------------------------------------
 
@@ -87,8 +87,8 @@ echo "| installing pass speedtest-cli"
 apt install pass speedtest-cli -y
 echo " "
 
-echo "| installing tty-clock"
-apt install tty-clock -y
+echo "| installing tty-clock netcat"
+apt install tty-clock netcat -y
 echo " "
 
 # ------------------------------------------
