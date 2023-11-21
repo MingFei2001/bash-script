@@ -38,6 +38,7 @@
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme nmap
 # pass gufw docker.io clamtk speedtest-cli
+# tty-clock
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -109,8 +110,8 @@ echo "| installing pass docker clamav"
 apt install pass docker.io clamtk -y
 echo " "
 
-echo "| installing speedtest-cli"
-apt install speedtest-cli -y
+echo "| installing speedtest-cli tty-clock"
+apt install speedtest-cli tty-clock -y
 echo " "
 
 # Secondly some programming languages
