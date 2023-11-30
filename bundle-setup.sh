@@ -38,7 +38,7 @@
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme nmap
 # pass gufw docker.io clamtk speedtest-cli
-# tty-clock netcat
+# tty-clock netcat tshark wireshark
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -114,8 +114,8 @@ echo "| installing speedtest-cli tty-clock"
 apt install speedtest-cli tty-clock -y
 echo " "
 
-echo "| installing netcat"
-apt install netcat -y
+echo "| installing netcat wireshark tshark"
+apt install netcat wireshark tshark -y
 echo " "
 
 # Secondly some programming languages
