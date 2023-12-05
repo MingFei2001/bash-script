@@ -31,14 +31,14 @@
 #
 # APT :
 # curl gcc g++ make git tldr vim neofetch duf
-# btop cmatrix fzf ripgrep thefuck mpv vlc tree
-# celluloid scrcpy gimp krita blender darktable
+# btop cmatrix fzf ripgrep mpv vlc tree tty-clock
+# celluloid scrcpy gimp krita blender uget
 # kdenlive obs-studio inkscape audacity stacer
 # python3 python3-pip python3.10-venv lua5.1 npm
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme nmap
 # pass gufw docker.io clamtk speedtest-cli
-# tty-clock netcat tshark wireshark
+# tshark wireshark
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -90,8 +90,8 @@ echo "| installing btop cmatrix scrcpy"
 apt install btop cmatrix scrcpy -y
 echo " "
 
-echo "| installing fzf ripgrep thefuck"
-apt install fzf ripgrep thefuck -y
+echo "| installing fzf ripgrep uget"
+apt install fzf ripgrep uget -y
 echo " "
 
 echo "| installing mpv vlc celluloid"
@@ -114,8 +114,8 @@ echo "| installing speedtest-cli tty-clock"
 apt install speedtest-cli tty-clock -y
 echo " "
 
-echo "| installing netcat wireshark tshark"
-apt install netcat wireshark tshark -y
+echo "| installing wireshark tshark"
+apt install wireshark tshark -y
 echo " "
 
 # Secondly some programming languages
@@ -147,10 +147,6 @@ echo " "
 
 echo "| installing inkscape"
 apt install inkscape -y
-echo " "
-
-echo "| installing darktable"
-apt install darktable -y
 echo " "
 
 echo "| installing kdenlive"

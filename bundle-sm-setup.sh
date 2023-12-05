@@ -27,8 +27,8 @@
 # List of software
 #
 # curl gcc g++ make git tldr vim neofetch duf
-# btop cmatrix fzf ripgrep thefuck tree fdclone
-# cmake nmap pass speedtest-cli netcat
+# btop cmatrix fzf ripgrep tree fdclone
+# cmake nmap pass speedtest-cli
 #
 # ------------------------------------------
 
@@ -75,8 +75,8 @@ echo "| installing btop cmatrix"
 apt install btop cmatrix -y
 echo " "
 
-echo "| installing fzf ripgrep thefuck"
-apt install fzf ripgrep thefuck -y
+echo "| installing fzf ripgrep"
+apt install fzf ripgrep -y
 echo " "
 
 echo "| installing fdclone cmake nmap"
