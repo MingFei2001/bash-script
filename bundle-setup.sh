@@ -38,7 +38,7 @@
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme nmap
 # pass gufw docker.io clamtk speedtest-cli
-# tshark wireshark
+# tshark wireshark gparted
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -114,8 +114,8 @@ echo "| installing speedtest-cli tty-clock"
 apt install speedtest-cli tty-clock -y
 echo " "
 
-echo "| installing wireshark tshark"
-apt install wireshark tshark -y
+echo "| installing wireshark tshark gparted"
+apt install wireshark tshark gparted -y
 echo " "
 
 # Secondly some programming languages
