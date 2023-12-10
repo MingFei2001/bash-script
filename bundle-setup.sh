@@ -38,7 +38,7 @@
 # nodejs golang github-desktop cmake fdclone
 # libreoffice qutebrowser ranger lookatme nmap
 # pass gufw docker.io clamtk speedtest-cli
-# tshark wireshark gparted
+# tshark wireshark gparted sysbench
 #
 # Snap :
 # firefox neovim chromium code monophony
@@ -116,6 +116,10 @@ echo " "
 
 echo "| installing wireshark tshark gparted"
 apt install wireshark tshark gparted -y
+echo " "
+
+echo "| installing sysbench"
+apt install sysbench -y
 echo " "
 
 # Secondly some programming languages
