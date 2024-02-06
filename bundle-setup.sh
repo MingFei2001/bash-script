@@ -25,7 +25,7 @@
 # ------------------------------------------
 # List of software
 #
-# curl gcc g++ make git tldr vim neofetch duf
+# curl build-essential git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep fdclone cmake scrcpy
 # speedtest-cli ranger tty-clock
 #
@@ -50,12 +50,12 @@ apt-get upgrade -y
 echo " "
 # ------------------------------------------
 # Start to install software
-echo "| installing curl gcc g++"
-apt install curl gcc g++ -y
+echo "| installing curl build-essential"
+apt install curl build-essential -y
 echo " "
 
-echo "| installing make git tldr"
-apt install make git tldr -y
+echo "| installing git tldr"
+apt install git tldr -y
 echo " "
 
 echo "| installing vim neofetch duf"
