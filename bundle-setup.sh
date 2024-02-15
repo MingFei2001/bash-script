@@ -27,7 +27,7 @@
 #
 # curl build-essential git tldr vim neofetch duf
 # btop cmatrix fzf ripgrep fdclone cmake scrcpy
-# speedtest-cli ranger tty-clock
+# speedtest-cli ranger tty-clock tmux
 #
 # ------------------------------------------
 
@@ -78,8 +78,8 @@ echo "| installing speedtest-cli tty-clock"
 apt install speedtest-cli tty-clock -y
 echo " "
 
-echo "| installing ranger scrcpy"
-apt install ranger scrcpy -y
+echo "| installing ranger scrcpy tmux"
+apt install ranger scrcpy tmux -y
 echo " "
 
 # ------------------------------------------
