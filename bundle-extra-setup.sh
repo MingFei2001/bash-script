@@ -25,7 +25,7 @@
 # ------------------------------------------
 # List of software
 #
-# stacer uget
+# stacer uget scrcpy
 #
 # gparted sysbench docker.io docker-compose
 #
@@ -66,6 +66,11 @@ echo " "
 
 echo "| installing uget"
 apt install uget -y
+echo " "
+
+
+echo "| installing scrcpy"
+apt install scrcpy -y
 echo " "
 
 # ------------------------------------------
