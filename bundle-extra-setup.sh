@@ -35,7 +35,7 @@
 # gimp krita inkscape
 # kdenlive audacity obs-studio
 # libreoffice qutebrowser
-# blender
+# blender chromium
 #
 # ------------------------------------------
 
@@ -126,6 +126,11 @@ echo " "
 
 # echo "| installing blender"
 # apt install blender -y
+# echo " "
+
+### Take note that chromium is not in ubuntu repositories
+# echo "| installing chromium"
+# apt install chromium -y
 # echo " "
 
 # ------------------------------------------
