@@ -26,8 +26,8 @@
 # List of software
 #
 # curl build-essential git tldr vim neofetch duf
-# btop cmatrix fzf ripgrep fdclone cmake
-# speedtest-cli ranger tty-clock tmux calcurse
+# btop cmatrix fzf ripgrep fdclone cmake zip
+# speedtest-cli ranger tty-clock tmux unzip
 #
 # ------------------------------------------
 
@@ -70,8 +70,8 @@ echo "| installing fzf ripgrep"
 apt install fzf ripgrep -y
 echo " "
 
-echo "| installing fdclone cmake calcurse"
-apt install fdclone cmake calcurse -y
+echo "| installing fdclone cmake"
+apt install fdclone cmake -y
 echo " "
 
 echo "| installing speedtest-cli tty-clock"
