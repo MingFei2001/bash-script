@@ -25,7 +25,7 @@
 # ------------------------------------------
 # List of software
 #
-# stacer uget scrcpy
+# stacer uget scrcpy pandoc
 #
 # gparted sysbench docker.io docker-compose
 #
@@ -71,6 +71,10 @@ echo " "
 
 echo "| installing scrcpy"
 apt install scrcpy -y
+echo " "
+
+echo "| installing pandoc"
+apt install pandoc -y
 echo " "
 
 # ------------------------------------------
