@@ -1,83 +1,24 @@
-#!/bin/sh
+# ------------------------------------------
+# Old bundle script
+# ------------------------------------------
+# System Utilities
 
-#------------------------------------------
-# ____   _    _  _   _  _____   _       ______
-# |  _ \ | |  | || \ | ||  __ \ | |     |  ____|
-# | |_) || |  | ||  \| || |  | || |     | |__
-# |  _ < | |  | || . ` || |  | || |     |  __|
-# | |_) || |__| || |\  || |__| || |____ | |____
-# |____/  \____/ |_| \_||_____/ |______||______|
-#
-# ------------------------------------------
+# echo "| installing stacer"
+# apt install stacer -y
+# echo " "
 
-# ------------------------------------------
-# Welcome to BUNDLE setup script
-# Basic Ubuntu and Debian Linux EXTRA Setup Script
-# This script is made by me, mingfei
-# ------------------------------------------
-# This script is created so i can just
-# simply git clone this and run it in bash
-# to install some extra apps
-# ------------------------------------------
-# P/S: Use it at your own risk
-# ------------------------------------------
-
-# ------------------------------------------
-# List of software
-#
-# stacer uget scrcpy pandoc
-#
-# gparted sysbench docker.io docker-compose
-#
-# nmap netcat wireshark tshark clamav gufw
-#
-# mpv vlc celluloid
-# gimp krita inkscape
-# kdenlive audacity obs-studio
-# libreoffice qutebrowser
-# blender chromium
-#
-# ------------------------------------------
-
-# ------------------------------------------
-# Welcoming text
-echo " "
-echo "| Basic Ubuntu and Debian Linux ESSENTIAL Setup Script"
-echo "| a.k.a. BUNDLE Setup Script"
-echo "| Made by mingfei"
-echo "| p/s: Run this script with sudo priviledges"
-echo " "
-# ------------------------------------------
-
-# ------------------------------------------
-# Update the system to the latest
-echo "| Updating System..."
-echo " "
-apt-get update
-apt-get upgrade -y
-echo " "
-# ------------------------------------------
-
-# Basic utilities
-
-echo "| installing stacer"
-apt install stacer -y
-echo " "
-
-echo "| installing uget"
-apt install uget -y
-echo " "
+# echo "| installing uget"
+# apt install uget -y
+# echo " "
 
 
-echo "| installing scrcpy"
-apt install scrcpy -y
-echo " "
+# echo "| installing scrcpy"
+# apt install scrcpy -y
+# echo " "
 
-echo "| installing pandoc"
-apt install pandoc -y
-echo " "
-
-# ------------------------------------------
+# echo "| installing pandoc"
+# apt install pandoc -y
+# echo " "
 
 # echo "| installing gparted"
 # apt install gparted -y
@@ -94,12 +35,20 @@ echo " "
 # ------------------------------------------
 # Cybersecurity Applications
 
-# echo "| installing nmap netcat"
-# apt install nmap netcat -y
+# echo "| installing nmap"
+# apt install netcat -y
 # echo " "
 
-# echo "| installing wireshark tshark"
-# apt install wireshark tshark -y
+# echo "| installing netcat"
+# apt install netcat -y
+# echo " "
+
+# echo "| installing wireshark"
+# apt install wireshark -y
+# echo " "
+
+# echo "| installing tshark"
+# apt install tshark -y
 # echo " "
 
 # echo "| installing clamav"
@@ -113,35 +62,60 @@ echo " "
 # ------------------------------------------
 # Creative Suite
 #
-# echo "| installing mpv vlc celluloid"
-# apt install mpv vlc celluloid -y
-# echo " "
-# echo "| installing gimp krita inkscape"
-# apt install gimp krita inkscape -y
+# echo "| installing mpv"
+# apt install mpv -y
 # echo " "
 
-# echo "| installing kdenlive audacity obs-studio"
-# apt install kdenlive audacity obs-studio -y
+# echo "| installing vlc"
+# apt install vlc -y
 # echo " "
 
-# echo "| installing libreoffice qutebrowser"
-# apt install libreoffice qutebrowser -y
+# echo "| installing celluloid"
+# apt install celluloid -y
+# echo " "
+
+# echo "| installing gimp"
+# apt install gimp -y
+# echo " "
+
+# echo "| installing krita"
+# apt install krita -y
+# echo " "
+
+# echo "| installing inkscape"
+# apt install inkscape -y
+# echo " "
+
+# echo "| installing kdenlive"
+# apt install kdenlive -y
+# echo " "
+
+# echo "| installing audacity"
+# apt install audacity -y
+# echo " "
+
+# echo "| installing obs-studio"
+# apt install obs-studio -y
+# echo " "
+
+# echo "| installing libreoffice"
+# apt install libreoffice -y
+# echo " "
+
+# echo "| installing qutebrowser"
+# apt install qutebrowser -y
 # echo " "
 
 # echo "| installing blender"
 # apt install blender -y
 # echo " "
 
-### Take note that chromium is not in ubuntu repositories
-# echo "| installing chromium"
-# apt install chromium -y
-# echo " "
-
 # ------------------------------------------
-# End of script
 
-echo " "
-echo "| That's the end of the script."
-echo "| Exiting..."
-echo " "
+### Take note that chromium is not in ubuntu repositories
+# apt install chromium -y
+# snap install chromium
+# snap install code --classic
+# snap install neovim --classic
+
 # ------------------------------------------
