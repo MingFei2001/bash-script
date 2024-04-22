@@ -37,6 +37,7 @@ echo "| -----------------------------"
 echo "| [1] Basic installation"
 echo "| [2] Full installation"
 echo "| [3] Extras Only installation"
+echo "| [0] Abort"
 echo "| -----------------------------"
 
 valid=false
@@ -87,6 +88,7 @@ while  ! $valid ; do
 			# ------------------------------------------
 		2) valid=true; echo "| You selected Full installation.";echo "| -----------------------------";;
 		3) valid=true; echo "| You selected Extras installation.";echo "| -----------------------------";;
+		0) valid=true; echo "| Program aborting ..."
 		*) echo "| Invalid input.";echo "| -----------------------------";;
 	esac
 
