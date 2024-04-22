@@ -2,6 +2,11 @@
 
 Do you ever feel frustrated when you have to manually install every small tools you need on every new machines? What if there are scripts to automate all those process by one command
 
+## Table of Contents
+1. Bundles
+2. Nmap Automation Script
+
+
 ## Bundles
 
 You can copy and paste following command to install some basic tools for debian-based system
@@ -24,3 +29,4 @@ Edit the script to remove or adjust the software that you want to use.
 1. Migrate the separated bundles script into one main script using switch case
 2. Make a void linux basic installation script
 3. Come out with a name for the void linux installation script
+4. Make a automated nmap script that allow different method of scanning
