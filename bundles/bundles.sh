@@ -57,6 +57,7 @@ while  ! $valid ; do
 
 			echo "| installing git tldr"
 			apt install git tldr -y
+			tldr -u
 			echo " "
 
 			echo "| installing vim neofetch duf"
