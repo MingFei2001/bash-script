@@ -89,7 +89,7 @@ while  ! $valid ; do
 			# ------------------------------------------
 		2) valid=true; echo "| You selected Full installation.";echo "| -----------------------------";;
 		3) valid=true; echo "| You selected Extras installation.";echo "| -----------------------------";;
-		0) valid=true; echo "| Program aborting ..."
+		0) valid=true; echo "| Program aborting ...";;
 		*) echo "| Invalid input.";echo "| -----------------------------";;
 	esac
 
