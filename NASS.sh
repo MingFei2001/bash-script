@@ -21,12 +21,15 @@ valid=false
 
 # Main whilel oop
 while ! $valid ; do
-	read -p "| Please select scanning type: " -r scanType; 
+	echo "| Please select scanning type: "
+	read -r scanType;
 
 	case $scanType in
 		1) valid=true;
-			read -p "| Please input target Address: : " -r targetAddr;
-			nmap -O $targetAddr;;
+			echo "| Please input target Address: "
+			read -r targetAddr;
+			echo ""
+			sudo nmap -O "$targetAddr";;
 		0) valid=true;echo "| Aborting ...";;
 		*) echo "| Invalid input .. ";;
 	esac
