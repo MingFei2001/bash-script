@@ -7,6 +7,11 @@
 # | Use this script to execute nmap scanning
 # | without memorising the entire nmap command
 # |--------------------------------------------
+# | Successfully implemented the following:
+# | 1. nmap installation checker
+# | 2. menu printing function
+# | 3. main scanning script loop
+# |--------------------------------------------
 
 # |--------------------------------------------
 # Welcome Menu
