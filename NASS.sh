@@ -26,6 +26,7 @@ show_menu() {
 }
 # |----------------------------------------
 
+
 # |----------------------------------------
 # Check if nmap is installed
 check_nmap_in(){
@@ -63,55 +64,55 @@ while ! $valid ; do
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -O $targetAddr
+			nmap -O -vv $targetAddr
 			;;
 		2)  # Perform an ARP Ping scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PR "$targetAddr"
+			nmap -sn -PR -vv "$targetAddr"
 			;;
 		3) # Perform a UDP Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PU "$targetAddr"
+			nmap -sn -PU -vv "$targetAddr"
 			;;
 		4) # Perform an ICMP ECHO Ping Scan on the target address range
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PE "$targetAddr"
+			nmap -sn -PE -vv "$targetAddr"
 			;;
 		5) # Perform an ICMP Timestamp Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PP "$targetAddr"
+			nmap -sn -PP -vv "$targetAddr"
 			;;
 		6) # Perform an ICMP Address Mask Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PM "$targetAddr"
+			nmap -sn -PM -vv "$targetAddr"
 			;;
 		7) # Perform a TCP SYN Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PS "$targetAddr"
+			nmap -sn -PS -vv "$targetAddr"
 			;;
 		8) # Perform a TCP ACK Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PA "$targetAddr"
+			nmap -sn -PA -vv "$targetAddr"
 			;;
 		9) # Perform an IP Protocol Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap -sn -PO "$targetAddr"
+			nmap -sn -PO -vv "$targetAddr"
 			;;
 		0) # Terminate the script 
 			valid=true;
