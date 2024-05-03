@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-# TODO:Gather all kinds of scanning methods and put it all in one script
-# 1. input target address
-# 2. select scan type
-# 3. start scanning
-# 4. Loop back to scan type menu
+# |----------------------------------------
+# | NASS a.k.a. Nmap Auto Scanning Script
+# | Use this script to do a nmap scan
+# | without memorising the nmap command
+# |----------------------------------------
 
-# Welcome Menu Function
+# |----------------------------------------
+# Welcome Menu
 show_menu() {
     printf "| -----------------------------\n"
     printf "| Nmap Automation Script\n"
@@ -23,12 +24,35 @@ show_menu() {
     printf "| [0] Abort\n"
     printf "| -----------------------------\n"
 }
+# |----------------------------------------
 
+# |----------------------------------------
+# Check if nmap is installed
+check_nmap_in(){
+	# moved the output of nmap command to null device
+	# together with any error on stderr
+	command -v nmap >/dev/null 2>&1
+	# check if the nmap existed by checking the last exit status
+	if [ $? -ne 0 ]; then
+		printf "Nmap is not installed on this system.\n"
+	        printf "Please install Nmap before running this script.\n"
+		printf "On Ubuntu/Debian, you can install it with: sudo apt-get install nmap\n"
+		printf "On RHEL/CentOS, you can install it with: sudo yum install nmap\n"
+		# terminate the script
+		exit 1
+	else
+		printf "Nmap is installed on the system\n"
+	fi
+}
+# |----------------------------------------
+
+# |----------------------------------------
 # Init loop state
 # End loop when true
+check_nmap_in
 valid=false
 
-# Main whilel oop
+# Main while loop
 while ! $valid ; do
 	show_menu
 	printf "| Please select scanning type: "
@@ -97,7 +121,11 @@ while ! $valid ; do
 			echo "| Invalid input .. ";;
 	esac
 done
+# End of main while loop
+# |----------------------------------------
 
+# |----------------------------------------
 # Exit message
 echo "| Program Exiting ..."
 echo "| -----------------------------"
+# |----------------------------------------
