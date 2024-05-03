@@ -63,31 +63,31 @@ while ! $valid ; do
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap "$targetAddr"
+			nmap -sn -PP "$targetAddr"
 			;;
 		6) # Perform an ICMP Address Mask Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap "$targetAddr"
+			nmap -sn -PM "$targetAddr"
 			;;
 		7) # Perform a TCP SYN Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap "$targetAddr"
+			nmap -sn -PS "$targetAddr"
 			;;
 		8) # Perform a TCP ACK Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap "$targetAddr"
+			nmap -sn -PA "$targetAddr"
 			;;
 		9) # Perform an IP Protocol Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-			nmap "$targetAddr"
+			nmap -sn -PO "$targetAddr"
 			;;
 		0) # Terminate the script 
 			valid=true;
