@@ -8,21 +8,21 @@
 
 # Welcome Menu Function
 show_menu() {
-echo "| -----------------------------"
-echo "| Nmap Automation Script"
-echo "| -----------------------------"
-echo "| [1] Basic Scan"
-echo "| [2] ARP Scan"
-echo "| [3] UDP Scan"
-echo "| [4] ICMP ECHO Ping Scan"
-echo "| [5] ICMP ECHO Ping Sweep"
-echo "| [6] ICMP Timestamp Ping Scan"
-echo "| [7] ICMP Address Mask Ping Scan"
-echo "| [8] TCP SYN Ping Scan"
-echo "| [9] TCP ACK Ping Scan"
-echo "| [10] IP Protocol Ping Scan"
-echo "| [0] Abort"
-echo "| -----------------------------"
+    printf "| -----------------------------\n"
+    printf "| Nmap Automation Script\n"
+    printf "| -----------------------------\n"
+    printf "| [1] Basic Scan\n"
+    printf "| [2] ARP Scan\n"
+    printf "| [3] UDP Scan\n"
+    printf "| [4] ICMP ECHO Ping Scan\n"
+    printf "| [5] ICMP ECHO Ping Sweep\n"
+    printf "| [6] ICMP Timestamp Ping Scan\n"
+    printf "| [7] ICMP Address Mask Ping Scan\n"
+    printf "| [8] TCP SYN Ping Scan\n"
+    printf "| [9] TCP ACK Ping Scan\n"
+    printf "| [10] IP Protocol Ping Scan\n"
+    printf "| [0] Abort\n"
+    printf "| -----------------------------\n"
 }
 
 # Init loop state
@@ -31,13 +31,42 @@ valid=false
 
 # Main whilel oop
 while ! $valid ; do
-	echo "| Please select scanning type: "
-	read -r scanType;
+	show_menu
+	printf "| Please select scanning type: "
+	read scanType;
 
 	case $scanType in
-		1) valid=true;
-			read -p "| Please input target Address: : " -r targetAddr;
-			nmap -O $targetAddr;;
+		1) # Performs a basic scan on the target address 
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap -O $targetAddr
+			;;
+		2)  # Perform an ARP Ping scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap -sn -PR "$targetAddr"
+			;;
+		3) # Perform a UDP Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap -sn -PU "$targetAddr"
+			;;
+		4) # Perform an ICMP ECHO Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap -sn -PE "$targetAddr"
+			;;
+		5)
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+
+			;;
+
 		0) valid=true;echo "| Aborting ...";;
 		*) echo "| Invalid input .. ";;
 	esac
