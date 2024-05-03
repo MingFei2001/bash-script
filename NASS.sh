@@ -11,16 +11,15 @@ show_menu() {
     printf "| -----------------------------\n"
     printf "| Nmap Automation Script\n"
     printf "| -----------------------------\n"
-    printf "| [1] Basic Scan\n"
-    printf "| [2] ARP Scan\n"
-    printf "| [3] UDP Scan\n"
+    printf "| [1] Basic OS Scan\n"
+    printf "| [2] ARP Ping Scan\n"
+    printf "| [3] UDP Ping Scan\n"
     printf "| [4] ICMP ECHO Ping Scan\n"
-    printf "| [5] ICMP ECHO Ping Sweep\n"
-    printf "| [6] ICMP Timestamp Ping Scan\n"
-    printf "| [7] ICMP Address Mask Ping Scan\n"
-    printf "| [8] TCP SYN Ping Scan\n"
-    printf "| [9] TCP ACK Ping Scan\n"
-    printf "| [10] IP Protocol Ping Scan\n"
+    printf "| [5] ICMP Timestamp Ping Scan\n"
+    printf "| [6] ICMP Address Mask Ping Scan\n"
+    printf "| [7] TCP SYN Ping Scan\n"
+    printf "| [8] TCP ACK Ping Scan\n"
+    printf "| [9] IP Protocol Ping Scan\n"
     printf "| [0] Abort\n"
     printf "| -----------------------------\n"
 }
@@ -54,43 +53,37 @@ while ! $valid ; do
 			read targetAddr;
 			nmap -sn -PU "$targetAddr"
 			;;
-		4) # Perform an ICMP ECHO Ping Scan on the target address
+		4) # Perform an ICMP ECHO Ping Scan on the target address range
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
 			nmap -sn -PE "$targetAddr"
 			;;
-		5) # Perform an ICMP ECHO Ping Sweep on the target address
+		5) # Perform an ICMP Timestamp Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
 			nmap "$targetAddr"
 			;;
-		6) # Perform an ICMP Timestamp Ping Scan on the target address
+		6) # Perform an ICMP Address Mask Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
 			nmap "$targetAddr"
 			;;
-		7) # Perform an ICMP Address Mask Ping Scan on the target address
+		7) # Perform a TCP SYN Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
 			nmap "$targetAddr"
 			;;
-		8) # Perform a TCP SYN Ping Scan on the target address
+		8) # Perform a TCP ACK Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
 			nmap "$targetAddr"
 			;;
-		9) # Perform a TCP ACK Ping Scan on the target address
-			valid=true;
-			printf "| Please input target Address: : ";
-			read targetAddr;
-			nmap "$targetAddr"
-			;;
-		10) # Perform an IP Protocol Ping Scan on the target address
+		9) # Perform an IP Protocol Ping Scan on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
