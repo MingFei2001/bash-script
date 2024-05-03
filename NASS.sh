@@ -32,17 +32,21 @@ show_menu() {
 check_nmap_in(){
 	# moved the output of nmap command to null device
 	# together with any error on stderr
+	printf "| Checking if nmap is installed ...\n"
 	command -v nmap >/dev/null 2>&1
 	# check if the nmap existed by checking the last exit status
 	if [ $? -ne 0 ]; then
-		printf "Nmap is not installed on this system.\n"
-	        printf "Please install Nmap before running this script.\n"
-		printf "On Ubuntu/Debian, you can install it with: sudo apt-get install nmap\n"
-		printf "On RHEL/CentOS, you can install it with: sudo yum install nmap\n"
+		printf "| -----------------------------\n"
+		printf "| Nmap is not installed on this system.\n"
+	        printf "| Please install Nmap before running this script.\n"
+		printf "| On Ubuntu/Debian, you can install it with: sudo apt-get install nmap\n"
+		printf "| On RHEL/CentOS, you can install it with: sudo yum install nmap\n"
+		printf "| -----------------------------\n"
 		# terminate the script
 		exit 1
 	else
-		printf "Nmap is installed on the system\n"
+		printf "| -----------------------------\n"
+		printf "| Nmap is installed on the system\n"
 	fi
 }
 # |----------------------------------------
