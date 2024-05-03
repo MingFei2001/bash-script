@@ -60,15 +60,48 @@ while ! $valid ; do
 			read targetAddr;
 			nmap -sn -PE "$targetAddr"
 			;;
-		5)
+		5) # Perform an ICMP ECHO Ping Sweep on the target address
 			valid=true;
 			printf "| Please input target Address: : ";
 			read targetAddr;
-
+			nmap "$targetAddr"
 			;;
-
-		0) valid=true;echo "| Aborting ...";;
-		*) echo "| Invalid input .. ";;
+		6) # Perform an ICMP Timestamp Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap "$targetAddr"
+			;;
+		7) # Perform an ICMP Address Mask Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap "$targetAddr"
+			;;
+		8) # Perform a TCP SYN Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap "$targetAddr"
+			;;
+		9) # Perform a TCP ACK Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap "$targetAddr"
+			;;
+		10) # Perform an IP Protocol Ping Scan on the target address
+			valid=true;
+			printf "| Please input target Address: : ";
+			read targetAddr;
+			nmap "$targetAddr"
+			;;
+		0) # Terminate the script 
+			valid=true;
+			echo "| Aborting ..."
+			;;
+		*) # Error handling 
+			echo "| Invalid input .. ";;
 	esac
 done
 
