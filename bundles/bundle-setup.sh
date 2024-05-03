@@ -101,7 +101,6 @@ echo " "
 # apt install uget -y
 # echo " "
 
-
 # echo "| installing scrcpy"
 # apt install scrcpy -y
 # echo " "
@@ -120,6 +119,10 @@ echo " "
 
 # echo "| installing docker docker-compose"
 # apt install docker docker-compose -y
+# echo " "
+
+# echo "| installing hardinfo"
+# apt install hardinfo -y
 # echo " "
 
 # ------------------------------------------
