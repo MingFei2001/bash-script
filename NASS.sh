@@ -1,18 +1,22 @@
 #!/usr/bin/env bash
 
-# |----------------------------------------
-# | NASS a.k.a. Nmap Auto Scanning Script
-# | Use this script to do a nmap scan
-# | without memorising the nmap command
-# |----------------------------------------
+# TODO: add more categories of scanning
 
-# |----------------------------------------
+# |--------------------------------------------
+# | NASS a.k.a. Nmap Automatic Scanning Script
+# | Use this script to execute nmap scanning
+# | without memorising the entire nmap command
+# |--------------------------------------------
+
+# |--------------------------------------------
 # Welcome Menu
 show_menu() {
     printf "| -----------------------------\n"
-    printf "| Nmap Automation Script\n"
-    printf "| -----------------------------\n"
+    printf "| # Nmap Automatic Scanning Script\n"
+    printf "| ## Basic Scanning\n"
     printf "| [1] Basic OS Scan\n"
+    printf "| -----------------------------\n"
+    printf "| ## Host Discovery\n"
     printf "| [2] ARP Ping Scan\n"
     printf "| [3] UDP Ping Scan\n"
     printf "| [4] ICMP ECHO Ping Scan\n"
@@ -21,13 +25,30 @@ show_menu() {
     printf "| [7] TCP SYN Ping Scan\n"
     printf "| [8] TCP ACK Ping Scan\n"
     printf "| [9] IP Protocol Ping Scan\n"
+    printf "| -----------------------------\n"
+    printf "| # Port Scanning\n"
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| [10] "
+    printf "| -----------------------------\n"
     printf "| [0] Abort\n"
     printf "| -----------------------------\n"
 }
-# |----------------------------------------
+# |--------------------------------------------
 
 
-# |----------------------------------------
+# |--------------------------------------------
 # Check if nmap is installed
 check_nmap_in(){
 	# moved the output of nmap command to null device
@@ -49,9 +70,9 @@ check_nmap_in(){
 		printf "| Nmap is installed on the system\n"
 	fi
 }
-# |----------------------------------------
+# |--------------------------------------------
 
-# |----------------------------------------
+# |--------------------------------------------
 # Init loop state
 # End loop when true
 check_nmap_in
@@ -118,6 +139,7 @@ while ! $valid ; do
 			read targetAddr;
 			nmap -sn -PO -vv "$targetAddr"
 			;;
+		10) # 
 		0) # Terminate the script 
 			valid=true;
 			echo "| Aborting ..."
@@ -127,10 +149,10 @@ while ! $valid ; do
 	esac
 done
 # End of main while loop
-# |----------------------------------------
+# |--------------------------------------------
 
-# |----------------------------------------
+# |--------------------------------------------
 # Exit message
 echo "| Program Exiting ..."
 echo "| -----------------------------"
-# |----------------------------------------
+# |--------------------------------------------
