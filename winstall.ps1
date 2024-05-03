@@ -14,153 +14,153 @@
 
 # -------------------------------------------
 # Welcome message
-echo "| -------------------------------------------"
-echo "| Winstall.ps1"
-echo "| Welcome to Windows Auto Installation Script"
-echo "| Use with caution"
-echo "| -------------------------------------------"
-echo ""
+Write-Output "| -------------------------------------------"
+Write-Output "| Winstall.ps1"
+Write-Output "| Welcome to Windows Auto Installation Script"
+Write-Output "| Use with caution"
+Write-Output "| -------------------------------------------"
+Write-Output ""
 # -------------------------------------------
 
 # -------------------------------------------
 # Update the repositories
-echo "| -------------------------------------------"
-echo "| Updating the repositories ..."
+Write-Output "| -------------------------------------------"
+Write-Output "| Updating the repositories ..."
 winget update
-echo "| -------------------------------------------"
-echo ""
+Write-Output "| -------------------------------------------"
+Write-Output ""
 
-echo "| -------------------------------------------"
-echo "| Installation starts ..."
-echo "| -------------------------------------------"
+Write-Output "| -------------------------------------------"
+Write-Output "| Installation starts ..."
+Write-Output "| -------------------------------------------"
 # -------------------------------------------
 
 # -------------------------------------------
 # Basic Utilities
-echo "| Installing 7zip"
+Write-Output "| Installing 7zip"
 winget install "7zip.7zip"
-echo ""
+Write-Output ""
 
-echo "| Installing PowerToys"
+Write-Output "| Installing PowerToys"
 winget install "Microsoft.PowerToys"
-echo ""
+Write-Output ""
 
-echo "| Installing NeatDownloadManager"
+Write-Output "| Installing NeatDownloadManager"
 winget install "JavadMotallebi.NeatDownloadManager"
-echo ""
+Write-Output ""
 
-echo "| Installing NETworkManager"
+Write-Output "| Installing NETworkManager"
 winget install "BornToBeRoot.NETworkManager"
-echo ""
+Write-Output ""
 
-echo "| Installing Microsoft PC Manager"
+Write-Output "| Installing Microsoft PC Manager"
 winget install "9PM860492SZD"
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 # -------------------------------------------
 
 # -------------------------------------------
 # System Infomation
-echo "| Installing GPU-Z"
+Write-Output "| Installing GPU-Z"
 winget install "TechPowerUp.GPU-Z"
-echo ""
+Write-Output ""
 
-echo "| Installing CPU-Z"
+Write-Output "| Installing CPU-Z"
 winget install "CPUID.CPU-Z"
-echo ""
+Write-Output ""
 
-echo "| Installing HWMonitor"
+Write-Output "| Installing HWMonitor"
 winget install "CPUID.HWMonitor"
-echo ""
+Write-Output ""
 
-echo "| Installing CrystalDiskMark"
+Write-Output "| Installing CrystalDiskMark"
 winget install "CrystalDewWorld.CrystalDiskMark"
-echo ""
+Write-Output ""
 
-echo "| Installing CrystalDiskInfo"
+Write-Output "| Installing CrystalDiskInfo"
 winget install "XP8K4RGX25G3GM"
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 # -------------------------------------------
 
 # -------------------------------------------
 # Development
-echo "| Installing GitHub cli"
+Write-Output "| Installing GitHub cli"
 winget install "GitHub.cli"
-echo ""
+Write-Output ""
 
-echo "| Installing VS Code"
+Write-Output "| Installing VS Code"
 winget install "Microsoft.VisualStudioCode"
-echo ""
+Write-Output ""
 
-echo "| Installing Postman"
+Write-Output "| Installing Postman"
 winget install "Postman.Postman"
-echo ""
+Write-Output ""
 
-echo "| Installing PuTTY"
+Write-Output "| Installing PuTTY"
 winget install "PuTTY.PuTTY"
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
 # -------------------------------------------
 
 # -------------------------------------------
 # Entertainment
-echo "| Installing Opera GX"
+Write-Output "| Installing Opera GX"
 winget install "Opera.OperaGX"
-echo ""
+Write-Output ""
 
-echo "| Installing YouTube Music Desktop App"
+Write-Output "| Installing YouTube Music Desktop App"
 winget install "th-ch.YouTubeMusic"
-echo ""
+Write-Output ""
 
-echo "| Installing BlueStack"
+Write-Output "| Installing BlueStack"
 winget install "BlueStack.BlueStacks"
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
-echo "| Installing "
+Write-Output "| Installing "
 winget install ""
-echo ""
+Write-Output ""
 
 # -------------------------------------------
