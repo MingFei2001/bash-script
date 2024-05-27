@@ -144,7 +144,6 @@ while ! $valid ; do
 			read targetAddr;
 			nmap -sn -PO -vv "$targetAddr"
 			;;
-		10) # 
 		0) # Terminate the script 
 			valid=true;
 			echo "| Aborting ..."
