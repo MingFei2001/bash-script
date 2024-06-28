@@ -5,6 +5,14 @@
 # ┗━┓┃ ┃┗┳┛╺━╸┃┏┛┣━┫ ┃┃┣╸ ┣┳┛ #
 # ┗━┛┗━┛ ╹    ┗┛ ╹ ╹╺┻┛┗━╸╹┗╸ #
 ###############################
+# Welcome to Soy-Vader Script #
+###############################
+# This script is used to auto #
+# install and configure void  #
+# linux with sway compositor  #
+###############################
+# Use this at your own risk   #
+###############################
 
 valid=false
 
