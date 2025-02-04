@@ -1,6 +1,9 @@
 # bash-script
 A collection of bash script
 
-There's used to be something here until i separate it out as a individual repo.
+## Table of Content
+1. [DDRWST: DD Read/Write SpeedTest](./ddrwst.sh)
+2. [nothing yet ...](#)
 
-see [Bundles](https://github.com/MingFei2001/bundles.git)
+## LICENSE
+This project is licensed under the [MIT License](./LICENSE) - see the LICENSE file for details.
