@@ -40,6 +40,10 @@ log_result() {
 ## Cleanup any previous log
 cat "/dev/null" > $LOG_FILE
 
+## Record some metadata
+log_result "=== DDRWST ==="
+log_result "Time: $(date +%Y-%m-%d) $(date +%H:%M:%S)"
+
 ## Begin write speed test
 log_result "=== Write Speed Test ==="
 # Copy /dev/zero to temp file to test write speed
@@ -47,7 +51,7 @@ WRITE_RESULT=$(dd if=/dev/zero of="$TEST_FILE" bs="$BLOCK_SIZE" count="$COUNT" o
 write_speed=$(echo "$WRITE_RESULT" | tail -n 1 | awk '{print $(NF-1)}' )
 log_result "Write speed: $write_speed MB/s"
 
-## Begin write speed test
+## Begin read speed test
 log_result "=== Read Speed Test ==="
 # Run the test file and discard the output to null to test read speed
 READ_RESULT=$(dd if="$TEST_FILE" of=/dev/null bs="$BLOCK_SIZE" count="$COUNT" iflag=direct 2>&1)
@@ -59,6 +63,7 @@ rm -f "$TEST_FILE"
 
 ## Exit message
 log_result "=== Test Complete ==="
+echo ""
 echo "Results saved to $LOG_FILE"
 
 ## P/S:
