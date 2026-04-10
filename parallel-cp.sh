@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script copy file to multiple device path
+# This script copy file to multiple device path in parallel
 
-# List of path to devices
+# List of path to devices and filename: modify these to change the settings
 USB=(MF_USB01 MF_USB02 MF_USB03 MF_USB04)
 mount_root="/media/mingfei/"
 source_file_path="$(realpath ~/Downloads/nxos64-msll.10.4.5.M.bin)"
@@ -19,10 +19,10 @@ for device in "${USB[@]}"; do
     rsync -ah --progress "$source_file_path" "$target/" && echo "transfer complete" &
 done
 wait
-#
+
 # List the directory content to output for manual validation
-for device in "${$USB[@]}"; do
-    ls "$device "
+for device in "${USB[@]}"; do
+    ls "$device"
 done
 wait
 
